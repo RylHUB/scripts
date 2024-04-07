@@ -1,2 +1,5 @@
-hi baby sana ako nalang
-🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾
+HI BABY SANA AKO NALANG
+
+HINDI AKO HACKER, BINABANTAYAN LANG KITA
+
+CRUSH PO KITA BABY AKO NALANG KASI
