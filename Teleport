@@ -1,0 +1,27 @@
+local Players = game:GetService("Players")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+-- RemoteEvent for teleport
+local remote = Instance.new("RemoteEvent")
+remote.Name = "TeleportEvent"
+remote.Parent = ReplicatedStorage
+
+-- Function to teleport
+local function teleportToPlayer(playerName, targetName)
+    local player = Players:FindFirstChild(playerName)
+    local target = Players:FindFirstChild(targetName)
+
+    if player and target and player.Character and target.Character then
+        local hrp = player.Character:FindFirstChild("HumanoidRootPart")
+        local targetHRP = target.Character:FindFirstChild("HumanoidRootPart")
+
+        if hrp and targetHRP then
+            hrp.CFrame = targetHRP.CFrame + Vector3.new(2, 0, 0)
+        end
+    end
+end
+
+-- Listen for teleport requests
+remote.OnServerEvent:Connect(function(_, playerName, targetName)
+    teleportToPlayer(playerName, targetName)
+end)
